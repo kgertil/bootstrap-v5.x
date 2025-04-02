@@ -1,10 +1,10 @@
-function staircase(n) {
+/*function staircase(n) {
     for (let i = 0; i < n; i++) {
         const spaces = ' '.repeat((n-1) - i);
         const hashes = '#'.repeat(i + 1);
         console.log(spaces + hashes);
     }
-}
+} */
 
 // words accepted start with A and end with E
 /*function aeOnly(arr) {
@@ -115,3 +115,33 @@ let arr= [3,4,2,8,10]
      
  }
  minMaxSum(arr);
+
+// Create a function that finds and returns the greatest number amongst any three number entered?
+
+/*function greatOf(m, d, s) {
+    let r = 4;
+    do while ( r < ) {
+        
+    }
+    
+} */
+
+// for loop and while loops
+// loop is any code that repeats itself when in true condition and stops or terminates when the condition is false
+// for loop, while loop, do while loop, for in loop, for of loop, forEach loop, find,every,some, filter, map, reduce
+
+let kervens=12 // intializer- ONLY RUNS ONCE
+while(kervens>=2){// condition
+    console.log(hello i am kervens and i am ${kervens} years old)// EXECUTION
+    kervens--// tracker(INCREMENT OR DECREMENT CAN BE A LOGIC)
+}
+
+let kervens2=2
+do{
+    console.log(hello i am kervens and i am ${kervens2} years old)
+    kervens2++
+}while(kervens2<=12)
+
+//
+function findTheHighest(a,b,c){ return Math.max(a,b,c)}
+console.log(findTheHighest(1,2,3));
