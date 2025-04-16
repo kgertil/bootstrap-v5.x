@@ -97,6 +97,7 @@ alphaBackwards(counter)
 ;
 
  */
+/*
 let arr= [3,4,2,8,10]
  function minMaxSum(r){
     let w =0;
@@ -114,7 +115,7 @@ let arr= [3,4,2,8,10]
      console.log( t + " Min Sum");
      
  }
- minMaxSum(arr);
+ minMaxSum(arr); */
 
 // Create a function that finds and returns the greatest number amongst any three number entered?
 
@@ -130,7 +131,7 @@ let arr= [3,4,2,8,10]
 // loop is any code that repeats itself when in true condition and stops or terminates when the condition is false
 // for loop, while loop, do while loop, for in loop, for of loop, forEach loop, find,every,some, filter, map, reduce
 
-let kervens=12 // intializer- ONLY RUNS ONCE
+/*let kervens=12 // intializer- ONLY RUNS ONCE
 while(kervens>=2){// condition
     console.log(hello i am kervens and i am ${kervens} years old)// EXECUTION
     kervens--// tracker(INCREMENT OR DECREMENT CAN BE A LOGIC)
@@ -144,4 +145,106 @@ do{
 
 //
 function findTheHighest(a,b,c){ return Math.max(a,b,c)}
-console.log(findTheHighest(1,2,3));
+console.log(findTheHighest(1,2,3)); */
+
+//Create a function that loops an array of numbers(from 1 -10) backwards.
+
+ //const myArray=[1,2,3,4,5,6,7,8,9,10] // array  to reverse
+//myArray.length;  // full size of the array 
+//myArray.forEach((element,index,array)=> {
+  //  console.log(array[array.length-index-1])
+//}) 
+
+/*  
+Create a function that accepts a value such that when greater or equal 
+to 10 it loops from 0 to 10 and when less than 10 it loops backwards from 10 to 0
+*/
+/*
+function  loopDirection(v) {
+    const theArray = [0,1,2,3,4,5,6,7,8,9,10];
+    if (v < 10) {
+        
+       // return theArray.forEach(theArray.length-1)
+        theArray.forEach((element,index,array)=> {
+            console.log(array[array.length-index-1])
+        })
+        
+    }
+    else if (v >= 10 ){
+        return theArray.forEach(element => console.log(element));
+    }
+    
+}
+loopDirection(10);
+
+/*  
+Create a function that accepts only boolean and no other
+ datatype (study : typeof) HW
+ */
+function typeB (bool) {
+    return typeof bool;
+}
+console.log(typeB(true));
+
+/*
+create a function that capitalizes the
+ first letter in the array const names = ["alice", "bob", "charlie"];
+ */
+const array =["alice", "bob", "charlie"]
+function firstCap(array) {
+   const result = array.map((element )=> {
+       return element[0].toUpperCase();
+
+   })
+   
+    
+    console.log(result);
+}
+firstCap(array);
+
+ 
+/*
+function firstCap(array) {
+    const result = array.map((element) => {
+        return element[0].toUpperCase() 
+    })
+    console.log(result)
+}
+
+firstCap(array)
+
+ */
+
+/*
+Create a function that fins the total number people that love suya , and sushi from the data below const ArrayNew = [
+{
+name: "linda",
+country: "Australia",
+stateOfResidence: "victoria",
+favoriteFoods: ["sushi", "pavlova", "suya"]
+},
+{
+name: "kai",
+country: "Japan",
+stateOfResidence: "tokyo",
+favoriteFoods: ["ramen", "sushi", "mochi"]
+},
+{
+name: "amina",
+country: "Nigeria",
+stateOfResidence: "lagos",
+favoriteFoods: ["jollof rice", "suya", "moi moi"]
+},
+{
+name: "leo",
+country: "Brazil",
+stateOfResidence: "sao paulo",
+favoriteFoods: ["feijoada", "sushi", "brigadeiro"]
+}
+];
+
+
+Hint: filter, forEach
+
+
+ */
