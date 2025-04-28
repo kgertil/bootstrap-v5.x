@@ -190,6 +190,7 @@ console.log(typeB(true));
 create a function that capitalizes the
  first letter in the array const names = ["alice", "bob", "charlie"];
  */
+/*
 const array =["alice", "bob", "charlie"]
 function firstCap(array) {
    const result = array.map((element )=> {
@@ -202,6 +203,8 @@ function firstCap(array) {
 }
 firstCap(array);
 
+
+ */
  
 /*
 function firstCap(array) {
@@ -216,7 +219,7 @@ firstCap(array)
  */
 
 /*
-Create a function that fins the total number people that love suya , and sushi from the data below const ArrayNew = [
+Create a function that finds the total number people that love suya , and sushi from the data below const ArrayNew = [
 {
 name: "linda",
 country: "Australia",
@@ -248,3 +251,39 @@ Hint: filter, forEach
 
 
  */
+
+ let ArrayNew = [
+    {
+        name: "linda",
+        country: "Australia",
+        stateOfResidence: "victoria",
+        favoriteFoods: ["sushi", "pavlova", "suya"]
+    },
+    {
+        name: "kai",
+        country: "Japan",
+        stateOfResidence: "tokyo",
+        favoriteFoods: ["ramen", "sushi", "mochi"]
+    },
+    {
+        name: "amina",
+        country: "Nigeria",
+        stateOfResidence: "lagos",
+        favoriteFoods: ["jollof rice", "suya", "moi moi"]
+    },
+    {
+        name: "leo",
+        country: "Brazil",
+        stateOfResidence: "sao paulo",
+        favoriteFoods: ["feijoada", "sushi", "brigadeiro"]
+    }
+];
+function findSoya() {
+    let count = 0;
+     ArrayNew.forEach((element)=> {
+         if (element.favoriteFoods.includes("suya") || element.favoriteFoods.includes("sushi") ) count++
+     })
+    return count;
+}
+
+console.log(findSoya());
